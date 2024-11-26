@@ -9,7 +9,7 @@ const NavBar = () => {
                 <img className='mx-2 w-10' src={logo} alt='logo'></img>
             </div>
             <div className='m-8 flex items-center justyfy-center gap-4 text-2xl'>
-                <a href='www.linkedin.com/in/lakusan' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.linkedin.com/in/lakusan' target="_blank" rel="noopener noreferrer">
                     <FaLinkedin></FaLinkedin>
                 </a>
             </div>
