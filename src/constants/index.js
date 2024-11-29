@@ -2,6 +2,10 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import bundeswehrIcon from "../assets/Bundeswehr.jpg";
+import ITZIcon from "../assets/ITZBund.jpg";
+import IHKIcon from "../assets/IHKIcon.jpeg";
+import SRHIcon from "../assets/SRHIcon.png";
 
 export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
 
@@ -9,33 +13,71 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "2020 - 2024",
+    role: "Administrative Case Officer",
+    department: "Engineering processes, individual specialized procedures, development systems",
+    company: "Federal Information Technology Centre ",
+    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base by 80% within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Product Management for Development Tools Solution Development for Migrations and Automation.", "Replacement of an on-premise Software Configuration Management solution and migration of 400 individual development projects to a cloud-based development platform within three years."],
+    technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
+    code: ["Groovy", "Python", "Bash", "Perl"],
+    skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD"],
+    logo: ITZIcon
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2014 - 2018",
+    role: "System Administrator",
+    department: "",
+    company: "Special Operation Forces Command: Department of further Development",
+    description: ["Development of Operational Experience Database as fundation to Armament Projects. Contributed conceptually and operationally to the implementation of high availability failover clustering and geo-redundancy."],
+    technologies: ["Windows Server 2012 R2", "Lotus Notes"],
+    code: ["Powershell", "C#"],
+    skills: ["Project Management", "Customer Product Management", "Armament Projects", "Solution Development", "IT Product Evaluation", "IT-Operations"],
+    logo: bundeswehrIcon
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "2010 - 2014",
+    role: "System Administrator",
+    department: "Engineering processes, individual specialized procedures, development systems",
+    company: "NBC Defence Command: Communications and Information Systems Group",
+    description: ["Successfully led a Help Desk and incident management team of up to six members. Played a key role in the implementation and development of a ticket management system for team performance evaluation.", "Functioned as deputy head of IT, providing CxO-level consulting, contributing to strategic decision-making, and leading a team of up to ten people. Actively contributed to the HERKULES project, taking on sub-project leadership roles, including mass rollouts.", "As Command, Control and Information System Expert and Adminsitrator, I Developed a didactic concept for modular multiplier training for the association-wide introduction of a distrubuted Command, Control and Information System."],
+    technologies: ["SAP", "Lotus Notes", "FueInfoSys", "Distibuted Systems"],
+    code: ["Powershell", "HTML", "CSS"],
+    skills: ["Project Management", "Consulting", "Leadership", "Solution Development"],
+    logo: bundeswehrIcon
+  },
+];
+
+export const EDUCATION = [
+  {
+    institude: "SRH University Heidelberg",
+    period: "Oct. 22 - Sep. 24",
+    degree: "M.Sc. Applied Computer Science",
+    spec: "Mobile Computing",
+    grade: "1.2",
+    awards: ["Master Award for outstanding scientific performance", "Best Graduate Award"],
+    icon: SRHIcon,
+    href :"https://www.srh-university.de/en/master/applied-computer-science/i/"
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    institude: "SRH University Heidelberg",
+    period: "Oct. 18 - Sep. 21",
+    degree: "B.Sc. Virtual Realities",
+    spec: "Game Development",
+    grade: "1.8",
+    awards: ["Innovation Awards of SRH Holding and Stadtwerke Heidelberg", "Best Graduate Award"],
+    icon: SRHIcon,
+    href :"https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/d/"
   },
+  {
+    institude: "IHR Northrhein Wertfalia",
+    period: "Oct. 10 - Jul. 12",
+    degree: "Certified IT Specialist",
+    spec: "System Integration",
+    grade: "2.4",
+    awards: [],
+    icon: IHKIcon,
+    href :"https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
+  }
 ];
 
 export const PROJECTS = [

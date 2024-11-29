@@ -23,7 +23,7 @@ const Hero = () => {
                     <div className='flex flex-col items-center lg:items-start'>
                         <motion.h1
                             variants={container(0)}
-                            initial='hidden'
+                            initial='hidden' 
                             animate='visible'
                             className='pb-16 text-6xl front-thin tracking-tight lg:mt-16 lg:text-8xl'>
                             Andreas Lakus
@@ -34,7 +34,7 @@ const Hero = () => {
                             initial='hidden'
                             animate='visible'
                         >
-                            Geiler Typ
+                            Solution Developer
                         </motion.span>
                         <motion.p
                             variants={container(1)}

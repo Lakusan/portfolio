@@ -5,9 +5,9 @@ import About from './components/About';
 import Technologies from './components/Technologies';
 import Coding from './components/Coding';
 import Experience from './components/Experience';
-import Internships from './components/Internships';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Education from './components/Education';
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
         <Technologies></Technologies>
         <Coding></Coding>
         <Experience></Experience>
-        <Internships></Internships>
+        <Education></Education>
         <Projects></Projects>
         <Contact></Contact>
       </div>

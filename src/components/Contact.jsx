@@ -1,5 +1,6 @@
 import { CONTACT } from '../constants/';
-import { motion, transform } from 'framer-motion';
+import { motion } from 'framer-motion';
+
 
 const Contact = () => {
     return (
@@ -24,7 +25,7 @@ const Contact = () => {
                                  whileInView={{ opacity: 1, y: 10 }}
                                  initial={{ opacity: 0, y: 100 }}
                                  transition={{ duration: 1 }}
-                href='#' className='border-b'>{CONTACT.email}</motion.a>
+                href={`mailto:${CONTACT.email}`} className='border-b'>{CONTACT.email}</motion.a>
             </div>
         </div>
     );
