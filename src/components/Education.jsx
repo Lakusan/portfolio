@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { EDUCATION } from '../constants';
+import { FiExternalLink } from "react-icons/fi";
 
 // const Education = () => {
 //     return (
@@ -41,69 +42,91 @@ import { EDUCATION } from '../constants';
 const Education = () => {
 
     return (
-        <section className="py-16 mx-auto sm:py-20">
-            <div className="mx-auto flex justify-center object-center px-4 py-16 sm:py-24 lg:max-w-7xl">
-                <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
-                    <h2 className="text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl lg:text-6xl">
-                        Education
-                    </h2>
-                    <div className="mx-auto grid gap-12 space-y-10 md:space-y-0 sm:gap-16 lg:grid-cols-3">
-                        {EDUCATION.map((edu) => (
-                            <div key={edu.degree} className="group h-96 w-96 [perspective:1000px]">
-                                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        <div className='border-b border-neutral-900 pb-4'>
+            <motion.h1
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}
+                className='my-20 text-center text-4xl'>Education
+            </motion.h1>
+            {/* <section className='bg-red-500 py-16 mx-auto sm:py-20 '> */}
+            {/* <section className='bg-green-500 mx-auto flex justify-center object-center px-4 py-16 sm:py-24 lg:max-w-7xl'> */}
+            <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
+                {/* <div className="bg-blue-500 mx-auto grid gap-12 space-y-10 md:space-y-10 sm:gap-16 lg:grid-cols-3"> */}
+                <div className="mx-auto grid lg:grid-cols-3 gap-10">
+                    {EDUCATION.map((edu) => (
+                        <div key={edu.degree} className="group h-96 w-96 [perspective:1000px]">
+                            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                {/* FrontFace */}
+                                <motion.div
+                                    className=" bg-black/80 absolute inset-0 h-full w-full rounded-xl [backface-visibility:hidden]"
+                                    whileInView={{ opacity: 1 }}
+                                    initial={{ opacity: 0 }}
+                                    transition={{ duration: 1 }}>
+                                    {(
+                                        <section className="grid grid-cols-2 items-center justify-center m-2 p-2 gap-2">
+                                            <div>
+                                                <img
+                                                    className="object-cover cursor-pointer h-1/3 w-1/3 rounded-xl"
+                                                    src={edu.icon}
+                                                    alt="icon institude"
+                                                />
+                                            </div>
+                                            <div className='grid grid-row-1 grid-cols-1 text-2xl'>{edu.institude}</div>
+                                        </section>
+                                    )}
+                                    <section className="grid grid-rows-3 items-center justify-start m-2">
+                                        <p className="text-1xl font-semibold">{edu.degree}</p>
+                                        <p className="text-1xl text-neutral-400">{edu.spec}</p>
+                                        <p className="text-1xl text-neutral-400">{edu.period}</p>
+                                    </section>
 
-                                    {/* Front Face /}
-  
-                    <div className="absolute inset-0 h-full w-full rounded-xl [backface-visibility:hidden]">
-  
-                      {edu.href && (
-  
-                        <Image
-  
-                          className="object-cover cursor-pointer object-left h-full w-full rounded-xl"
-  
-                          src={edu.href}
-  
-                          alt={edu.href}
-  
-                          width={320}
-  
-                          height={320}
-  
-                        />
-  
-                      )}
-  
-                      <p className="md:my-6 text-2xl">{edu.href}</p>
-  
-                    </div>
-  
-                    {/ Back Face */}
-                                    <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                                        <div className="flex min-h-full flex-col items-center justify-center">
-                                            <h2 className="text-2xl font-bold mb-4">{edu.grade}</h2>
-                                            <p className="text-lg text-pretty text-center mb-4">
-                                                {edu.institude}
-                                            </p>
-                                            <a href="tel:555-555-5555" className="inline-flex">
-                                                <button className="my-2 bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4 w-auto rounded-full inline-flex items-center">
-                                                    <span>Schedule Service</span>
-                                                    {/* <WrenchScrewdriverIcon className="h-6 w-6 ml-2" /> */}
-                                                </button>
-                                            </a>
+                                    <section className='mx-1'>
+                                        <div className='m-1 flex flex-wrap'>
+                                            {edu.technologies.map((tech, index) => (
+                                                <span key={index} className='mr-2 mt-1 rounded bg-neutral-900 px-2 py-1 text-xs font-small text-lime-500'>{tech}</span>
+                                            ))}
                                         </div>
+                                        <div className='m-1 flex flex-wrap'>
+
+                                            {edu.skills.map((skill, index) => (
+                                                <span key={index} className='mr-2 mt-1 rounded bg-neutral-900 px-2 py-1 text-xs font-small text-blue-500'>{skill}</span>
+                                            ))}
+                                        </div>
+                                        <div className='m-1 flex flex-wrap'>
+
+                                            {edu.code.map((c, index) => (
+                                                <span key={index} className='mr-2 mt-1 rounded bg-neutral-900 px-2 py-1 text-xs font-small text-yellow-500'>{c}</span>))}
+                                        </div>
+                                    </section>
+
+                                </motion.div>
+                                {/* BackFace */}
+                                <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <div className="flex min-h-full flex-col items-center justify-center">
+                                        <h2 className="text-2xl font-bold mb-4">Final grade: {edu.grade}</h2>
+                                        {edu.awards.map((award, index) => (
+                                        <p key={index} className="text-lg text-pretty text-center mb-4 text-neutral-100">
+                                            {award}
+                                        </p>
+                                            ))}
+
+                                        <a href={edu.href} className="inline-flex font-medium items-center text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                                                <span>Details:</span>
+                                                <FiExternalLink />
+                                        </a>
                                     </div>
                                 </div>
+                                {/* END_BackFace */}
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </section>
+            {/* </section> */}
+            {/* </section> */}
+        </div>
     );
 };
-
-
-
 
 export default Education;

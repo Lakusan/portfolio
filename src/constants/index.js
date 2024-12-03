@@ -55,6 +55,9 @@ export const EDUCATION = [
     spec: "Mobile Computing",
     grade: "1.2",
     awards: ["Master Award for outstanding scientific performance", "Best Graduate Award"],
+    technologies: ["Unity Engine", "Media Pipe", "GCP", "React", ".NET MAUI"],
+    code: ["JavaScript", "Python", "C#"],
+    skills: ["Project Management", "Service Engineering", "Full Stack Dev", "Computer Vision", "Extended Reality", "Digital Twins", "SLAM", "Cloud and Mobile Computing"],
     icon: SRHIcon,
     href :"https://www.srh-university.de/en/master/applied-computer-science/i/"
   },
@@ -65,6 +68,9 @@ export const EDUCATION = [
     spec: "Game Development",
     grade: "1.8",
     awards: ["Innovation Awards of SRH Holding and Stadtwerke Heidelberg", "Best Graduate Award"],
+    technologies: ["Unity Engine", "Unreal Engine", "Virtual Box", ".NET", "Trello" ],
+    code: ["C++", "C#", "JavaScript", "Python"],
+    skills: ["Game Development", "Computer Vision", "Extended Reality", "SLAM", "IoT", ],
     icon: SRHIcon,
     href :"https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/d/"
   },
@@ -72,9 +78,12 @@ export const EDUCATION = [
     institude: "IHR Northrhein Wertfalia",
     period: "Oct. 10 - Jul. 12",
     degree: "Certified IT Specialist",
-    spec: "System Integration",
+    spec: "Systems Integration",
     grade: "2.4",
     awards: [],
+    technologies: ["Debian", "Microsoft Windows Server", "Ubuntu Server", "Virtual Box", "VMWare"],
+    code: ["MS Batch Script", "Shell", "Java", "C++"],
+    skills: ["Project Management", "IT-Operations", "System Administration", "IT-Security"],
     icon: IHKIcon,
     href :"https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
   }

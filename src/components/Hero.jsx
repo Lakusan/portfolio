@@ -39,36 +39,22 @@ const Hero = () => {
                             animate='visible'
                         >
                         </motion.span>
-                            <p>
-                                I do
-                            </p>
-                                <p className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent'>
-                                <Typewriter
-                                    options={{
-                                        strings: ["Git/Dev(Sec)Ops", "Cloud Engineering", "Ai & Computer Vision", "Photogrametry", "IT-Infrastructure", "Software & Solution Development", "Consulting", "Leading Teams", "Service Management"],
-                                        autoStart: true,
-                                        loop: true,
-                                        loopCount: Infinity,
-                                        deleteSpeed: "natural",
-                                        pauseFor: 1000,
-                                    }}
-                                />
-                                </p>
+                        <p>
+                            I do
+                        </p>
+                        <Typewriter
+                            options={{
+                                wrapperClassName: 'bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent',
+                                strings: ["Git/Dev(Sec)Ops", "Cloud Engineering", "Ai & Computer Vision", "Photogrammetry", "IT-Infrastructure", "Software & Solution Development", "Consulting", "Leading Teams", "Service Management"],
+                                autoStart: true,
+                                loop: true,
+                                loopCount: Infinity,
+                                deleteSpeed: "natural",
+                                pauseFor: 1000,
+                            }}
+                        />
                     </div>
-
                     <div>
-
-
-
-
-                        {/* <motion.span
-                            className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent'
-                            variants={container(0.5)}
-                            initial='hidden'
-                            animate='visible'
-                        >
-                            Solution Developer
-                        </motion.span> */}
                         <motion.p
                             variants={container(1)}
                             initial='hidden'

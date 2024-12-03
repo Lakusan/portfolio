@@ -9,7 +9,7 @@ import { SiJira } from "react-icons/si";
 import GoogleCloudLogo from '../assets/GoogleCloudIcon';
 import RedisIcon from '../assets/RedisIcon.png';
 import MongoDBIcon from '../assets/MongoDBIcon.png';
-import OpenCVIcon from '../assets/OpenCVIcon.png';
+import OpenCVIcon from '../assets/OpenCVIcon_wht.png';
 import JenkinsIcon from '../assets/JenkinsIcon.png';
 
 const iconVariants = (duration) => ({
@@ -37,13 +37,13 @@ const Technologies = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1.5 }}
-                className='flex flex-wrap items-center justify-center gap-5'>
+                className='flex flex-wrap items-center justify-center gap-10'>
                 <motion.div
                     variants={iconVariants(2.5)}
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <TbBrandUnity className='text-7xl text-neutral-100'></TbBrandUnity>
                 </motion.div>
                 <motion.div
@@ -51,7 +51,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <FaConfluence className='text-7xl text-blue-600'></FaConfluence>
                 </motion.div>
                 <motion.div
@@ -59,7 +59,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <GoogleCloudLogo></GoogleCloudLogo>
                 </motion.div>
                 <motion.div
@@ -67,7 +67,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <SiUnrealengine className='text-7xl bg-black rounded-full'></SiUnrealengine>
                 </motion.div>
                 <motion.div
@@ -75,7 +75,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <IoLogoNodejs className='text-7xl text-[#5FA04E] '></IoLogoNodejs>
                 </motion.div>
                 <motion.div
@@ -83,7 +83,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <img src={RedisIcon} className="w-[72px] h-[72px]"></img>
                 </motion.div>
                 <motion.div
@@ -91,7 +91,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <img src={MongoDBIcon} className="w-[72px] h-[72px]"></img>
                 </motion.div>
                 <motion.div
@@ -99,7 +99,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <img src={OpenCVIcon} className="w-[72px] h-[72px] object-contain"></img>
                 </motion.div>
                 <motion.div
@@ -107,7 +107,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <SiDotnet className='text-7xl text-neutral-50 bg-[#4F2AD2] rounded-full'></SiDotnet>
                 </motion.div>
                 <motion.div
@@ -115,7 +115,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <SiJira className='text-7xl text-[#2684FF]'></SiJira>
                 </motion.div>
                 <motion.div
@@ -123,7 +123,7 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
-                    className='rounded-2xl border-4 border-neutral-800 p-2'>
+                    className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                             <img src={JenkinsIcon} className='w-[72px] h-[72px] object-contain'></img>
                 </motion.div>
             </motion.div>
