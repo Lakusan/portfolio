@@ -1,11 +1,11 @@
-import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-import bundeswehrIcon from "../assets/Bundeswehr.jpg";
-import ITZIcon from "../assets/ITZBund.jpg";
-import IHKIcon from "../assets/IHKIcon.jpeg";
-import SRHIcon from "../assets/SRHIcon.png";
+import bundeswehrIcon from "../assets/partners/Bundeswehr.jpg";
+import ITZIcon from "../assets/partners/ITZBund.jpg";
+import IHKIcon from "../assets/partners/IHKIcon.jpeg";
+import SRHIcon from "../assets/partners/SRHIcon.png";
+import invisnavIcon from "../assets/projects/invisnav_icon.png";
 
 export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
 
@@ -91,38 +91,72 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    url: "www.google.com",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
+    title: "My Portfolio Website",
+    url: "https://youtu.be/MOSGOFGztz4",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+    "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Portfolio Website",
+    title: "INVISNAV - Indoor Visual Positioning System for Mobile Devices",
+    url: "https://github.com/Lakusan/invisnav",
+    image: invisnavIcon,
+    description:
+      "Mobile Application for Scanning Environments as Digital Twin as Map with Navigation capabillities",
+    technologies: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "Daprota",
+    url: "https://youtu.be/MOSGOFGztz4",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Blogging Platform",
+    title: "Realtime Motion Capturing",
+    url: "https://youtu.be/MOSGOFGztz4",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    coding: ["asds", "CSS", "React", "Node.js", "MongoDB"],
   },
+  {
+    title: "Realtime Flight Tracker and Flight-Route-Planner",
+    url: "https://youtu.be/MOSGOFGztz4",
+    image: project4,
+    description:
+      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "Mixed Reality without HoloLens?",
+    url: "https://youtu.be/MOSGOFGztz4",
+    image: project4,
+    description:
+      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "Alpha Onslaught - Virtual Reality Game with real Haptics",
+    url: "https://youtu.be/MOSGOFGztz4",
+    image: project4,
+    description:
+      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+  }
 ];
 
 export const CONTACT = {
-  address: "Friedrichstraße 15, 76669 Bad Schönborn ",
+  address: "Friedrichstraße 15, 76669 Bad Schönborn",
   phoneNo: "+49 173 578 749 5",
   email: "Andreas.Lakus@googlemail.com",
 };
