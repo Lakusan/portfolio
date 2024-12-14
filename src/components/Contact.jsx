@@ -5,9 +5,26 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
+
+
+
 const Contact = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('Contact')
+            }
+        },
+    });
     return (
-        <div className='Contact border-b border-neutral-900 pb-20'>
+        <div ref={ref} className='Contact border-b border-neutral-900 pb-20'>
+            {/* <div ref={ref}>
+                <h2>{`Header inside viewport ${inView}.`}</h2>
+            </div> */}
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

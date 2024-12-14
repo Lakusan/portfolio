@@ -12,6 +12,10 @@ import MongoDBIcon from '../assets/MongoDBIcon.png';
 import OpenCVIcon from '../assets/OpenCVIcon_wht.png';
 import JenkinsIcon from '../assets/JenkinsIcon.png';
 
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
+
 const iconVariants = (duration) => ({
     initial: { y: -10 },
     animate: {
@@ -26,8 +30,16 @@ const iconVariants = (duration) => ({
 });
 
 const Technologies = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('Skills')
+            }
+        },
+    });
     return (
-        <div className='Skills border-b border-neutral-800 pb-24'>
+        <div ref={ref} className='Skills border-b border-neutral-800 pb-24'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

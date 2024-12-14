@@ -3,9 +3,21 @@ import aboutImg from '../assets/about.jpg';
 import { ABOUT_TEXT } from '../constants';
 import { motion } from 'framer-motion';
 
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
+
 const About = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('About')
+            }
+        },
+    });
     return (
-        <div className='About border-b border-neutral-900 pb-4'>
+        <div ref={ref} className='About border-b border-neutral-900 pb-4'>
             <h1 className='my-20 text-center text-4xl'>
                 About
                 <span className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-light text-transparent'> Me</span>

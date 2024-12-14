@@ -2,10 +2,22 @@ import { motion } from 'framer-motion';
 import { EDUCATION } from '../constants';
 import { FiExternalLink } from "react-icons/fi";
 
-const Education = () => {
 
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
+
+const Education = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('Education')
+            }
+        },
+    });
     return (
-        <div className='Education border-b border-neutral-900 pb-4'>
+        <div ref={ref} className='Education border-b border-neutral-900 pb-4'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

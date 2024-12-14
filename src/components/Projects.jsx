@@ -2,10 +2,22 @@ import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
 import { FiExternalLink } from "react-icons/fi";
 
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
+
 
 const Projects = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('Projects')
+            }
+        },
+    });
     return (
-        <div className='Projects border-b border-neutral-900 pb-4'>
+        <div ref={ref} className='Projects border-b border-neutral-900 pb-4'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

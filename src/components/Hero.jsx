@@ -1,8 +1,12 @@
 import { HERO_CONTENT } from '../constants';
 import profilePic from '../assets/hero/hero.png';
-import { motion, transform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Typewriter from "typewriter-effect";
 
+
+import { useInView } from "react-intersection-observer";
+import { AppContext } from "../app-context/AppContext";
+import { useContext, useState } from 'react';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -17,8 +21,16 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+    const { state, setState } = useContext(AppContext);
+    const { ref } = useInView({
+        onChange: (inView) => {
+            if (inView) {
+                setState('Home')
+            }
+        },
+    });
     return (
-        <div className='border-b border-neutral-900 pb-4 mt-12 lg:mb-35'>
+        <div ref={ref} className='Home border-b border-neutral-900 pb-4 mt-12 lg:mb-35' >
             <div className='flex flex-wrap'>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex flex-col items-center lg:items-start'>
