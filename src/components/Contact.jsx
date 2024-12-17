@@ -15,7 +15,7 @@ const Contact = () => {
     const { state, setState } = useContext(AppContext);
     const { ref } = useInView({
         onChange: (inView) => {
-            if (inView) {
+            if (inView && state != 'Contact') {
                 setState('Contact')
             }
         },

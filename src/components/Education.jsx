@@ -11,7 +11,7 @@ const Education = () => {
     const { state, setState } = useContext(AppContext);
     const { ref } = useInView({
         onChange: (inView) => {
-            if (inView) {
+            if (inView && state != 'Education') {
                 setState('Education')
             }
         },
@@ -27,7 +27,7 @@ const Education = () => {
             <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
                 <div className="mx-auto grid lg:grid-cols-3 gap-10">
                     {EDUCATION.map((edu) => (
-                        <div key={edu.degree} className="group h-96  w-72 g:w-96 md:w-96 [perspective:1000px]">
+                        <div key={edu.degree} className="group h-80  w-72 lg:w-96 md:w-96 [perspective:1000px]">
                             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                 {/* FrontFace */}
                                 <motion.div
@@ -44,13 +44,13 @@ const Education = () => {
                                                     alt="icon institute"
                                                 />
                                             </div>
-                                            <div className='grid grid-row-1 grid-cols-1 text-2xl text-purple-100'>{edu.institude}</div>
+                                            <div className='grid grid-row-1 grid-cols-1 lg:text-2xl text-1xl text-purple-100'>{edu.institude}</div>
                                         </section>
                                     )}
                                     <section className="grid grid-rows-3 items-center justify-start m-2">
                                         <p className="text-1xl font-semibold text-purple-100">{edu.degree}</p>
-                                        <p className="text-1xl text-neutral-400">{edu.spec}</p>
-                                        <p className="text-1xl text-neutral-400">{edu.period}</p>
+                                        <p className="lg:text-1xl text-xs text-neutral-400">{edu.spec}</p>
+                                        <p className="lg:text-1xl text-xs text-neutral-400">{edu.period}</p>
                                     </section>
 
                                     <section className='mx-1'>

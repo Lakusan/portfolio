@@ -1,11 +1,15 @@
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import heroIcon from "../assets/hero/hero.png";
+import daprotaIcon from "../assets/projects/daprota_appicon.png";
+import handtrackingImg from "../assets/projects/handtracking.png";
 import bundeswehrIcon from "../assets/partners/Bundeswehr.jpg";
 import ITZIcon from "../assets/partners/ITZBund.jpg";
 import IHKIcon from "../assets/partners/IHKIcon.jpeg";
 import SRHIcon from "../assets/partners/SRHIcon.png";
 import invisnavIcon from "../assets/projects/invisnav_icon.png";
+import rtmcIcon from "../assets/projects/rtmc.png";
+import aoIcon from "../assets/projects/alpha_onslaught.png";
+
 
 export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
 
@@ -21,7 +25,8 @@ export const EXPERIENCES = [
     technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
     code: ["Groovy", "Python", "Bash", "Perl"],
     skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD"],
-    logo: ITZIcon
+    logo: ITZIcon,
+    href:"https://www.itzbund.de/"
   },
   {
     year: "2014 - 2018",
@@ -32,7 +37,8 @@ export const EXPERIENCES = [
     technologies: ["Windows Server 2012 R2", "Lotus Notes"],
     code: ["Powershell", "C#"],
     skills: ["Project Management", "Customer Product Management", "Armament Projects", "Solution Development", "IT Product Evaluation", "IT-Operations"],
-    logo: bundeswehrIcon
+    logo: bundeswehrIcon,
+    href:"https://www.bundeswehr.de/"
   },
   {
     year: "2010 - 2014",
@@ -43,7 +49,8 @@ export const EXPERIENCES = [
     technologies: ["SAP", "Lotus Notes", "FueInfoSys", "Distibuted Systems"],
     code: ["Powershell", "HTML", "CSS"],
     skills: ["Project Management", "Consulting", "Leadership", "Solution Development"],
-    logo: bundeswehrIcon
+    logo: bundeswehrIcon,
+    href:"https://www.bundeswehr.de/"
   },
 ];
 
@@ -92,43 +99,57 @@ export const EDUCATION = [
 export const PROJECTS = [
   {
     title: "My Portfolio Website",
-    url: "https://youtu.be/MOSGOFGztz4",
-    image: project2,
-    description:
-    "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+    url: "https://lakusan.github.io/portfolio/",
+    description:"Responsive React WebApp to introduce myself and my skillset to potential Employers and Clients.",
+    demoURL: "https://lakusan.github.io/portfolio/",
+    githubURL: "https://github.com/Lakusan/portfolio",
+    detailsURL: undefined,
+    image: heroIcon,
+    technologies: ["AI", "Image Analysis", "WebDev", "Tensorflow"],
+    coding: ["JavaScript", "HTML", "CSS"],
   },
   {
     title: "INVISNAV - Indoor Visual Positioning System for Mobile Devices",
     url: "https://github.com/Lakusan/invisnav",
+    demoURL: undefined,
+    githubURL: "https://github.com/Lakusan/invisnav",
+    detailsURL: undefined,
     image: invisnavIcon,
     description:
       "Mobile Application for Scanning Environments as Digital Twin as Map with Navigation capabillities",
-    technologies: ["asd", "CSS", "React", "Node.js", "MongoDB"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Unity Engine", "Niantic Lightship", "ARCore", "Firebase Realtime", "SLAM", "Extended Reality"],
+    coding: ["C#", "JSON"],
   },
   {
-    title: "Daprota",
-    url: "https://youtu.be/MOSGOFGztz4",
-    image: project3,
+    title: "Daprota - Data Protection Training App (Win/Android/IOS) ",
+    url: "https://github.com/Lakusan/daprota",
+    demoURL: undefined,
+    githubURL: "https://github.com/Lakusan/daprota",
+    detailsURL: undefined,
+    image: daprotaIcon,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+      "The Data Protection Training app (DaProTa) is an Cross-Plattform-Application designed to educate users on the fundamental aspects of data privacy in Germany. The goal is to transform learning into an immersive journey, breaking down complex concepts into manageable parts, and leaving users not only informed but also enthusiastic about applying DSGVO principles in their daily lives.",
+    technologies: [".NET MAUI", "Crossplattform", "Android", "Visual Studio"],
+    coding: ["C#", "XML"]
   },
   {
     title: "Realtime Motion Capturing",
-    url: "https://youtu.be/MOSGOFGztz4",
-    image: project4,
+    url: undefined,
+    demoURL: undefined,
+    githubURL: undefined,
+    detailsURL: undefined,
+    image: rtmcIcon,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    coding: ["asds", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["AI", "Computer Vision", "Unity Engine", "Mediapipe", "Real Time Computing", "Convolutional Neuronal Networks"],
+    coding: ["C#", "Python"],
   },
   {
     title: "Realtime Flight Tracker and Flight-Route-Planner",
-    url: "https://youtu.be/MOSGOFGztz4",
+    url: undefined,
+    demoURL: undefined,
+    githubURL: undefined,
+    detailsURL: undefined,
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
@@ -137,7 +158,10 @@ export const PROJECTS = [
   },
   {
     title: "Mixed Reality without HoloLens?",
-    url: "https://youtu.be/MOSGOFGztz4",
+    url: undefined,
+    demoURL: undefined,
+    githubURL: undefined,
+    detailsURL: undefined,
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
@@ -147,11 +171,25 @@ export const PROJECTS = [
   {
     title: "Alpha Onslaught - Virtual Reality Game with real Haptics",
     url: "https://youtu.be/MOSGOFGztz4",
-    image: project4,
+    demoURL: undefined,
+    githubURL: undefined,
+    detailsURL: "https://youtu.be/MOSGOFGztz4",
+    image: aoIcon,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Arduino", "Raspberry Pi", "Embedded Development", "Unreal Engine", "RFID", "Internet of Things", "Digital Twins", "Extended Realities"],
+    coding: ["C++", "Python"]
+  },
+  {
+    title: "Teachable Machines - Transfer Lerning with Images",
+    url: "https://lakusan.github.io/KI-Projekt/",
+    demoURL: "https://lakusan.github.io/KI-Projekt/",
+    githubURL: "https://github.com/Lakusan/KI-Projekt",
+    detailsURL: "https://github.com/Lakusan/KI-Projekt/blob/main/11012049_KI_Pr%C3%A4sentation.pdf",
+    image: handtrackingImg,
+    description:"This AI project was developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program as an examination performance. It features an illustrative representation of the training and classification process of a k-nearest neighbor algorithm. A hands on to Transfer Learning with teachable machines and the creation of own datasets including training for image classification. It also includes Memetings as example of a pre-trained model for hand gesture recognition to overlay images during virtual meetings in a virtual camera. Futhermore ther is a Hand Tracking feature with Universal hand gesture recognition for overlaying images.",
+    technologies: ["AI", "Image Analysis", "Web Development", "Tensorflow", "Convolutional Neuronal Networks", "Computer Vision"],
+    coding: ["JavaScript", "HTML", "CSS"],
   }
 ];
 

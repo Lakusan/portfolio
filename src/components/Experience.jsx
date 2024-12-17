@@ -9,7 +9,7 @@ const Experience = () => {
     const { state, setState } = useContext(AppContext);
     const { ref } = useInView({
         onChange: (inView) => {
-            if (inView) {
+            if (inView && state != 'Experience') {
                 setState('Experience')
             }
         },
@@ -31,7 +31,9 @@ const Experience = () => {
                             className='w-full lg:w-1/4'>
                             <p className='mb-2 text-sm text-neutral-400'>{experience.year}</p>
                             <div className='w-full lg:w-1/2 flex justify-center lg:justify-start'>
-                                <img className='w-1/2 sm:w-1/2 md:w-1/3 lg:w-full rounded-2xl mb-5' src={experience.logo} alt="logo"></img>
+                                <a href={experience.href} target="_blank" rel="noopener noreferrer">
+                                    <img className='w-1/2 sm:w-1/2 md:w-1/3 lg:w-full rounded-2xl mb-5' src={experience.logo} alt="logo"></img>
+                                </a>
                             </div>
                         </motion.div>
                         <motion.div
