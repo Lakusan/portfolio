@@ -27,7 +27,7 @@ const Education = () => {
             <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
                 <div className="mx-auto grid lg:grid-cols-3 gap-10">
                     {EDUCATION.map((edu) => (
-                        <div key={edu.degree} className="group h-80  w-72 lg:w-96 md:w-96 [perspective:1000px]">
+                        <div key={edu.degree} className="group h-80 lg:h-[360px] w-72 lg:w-96 md:w-96 [perspective:1000px]">
                             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                 {/* FrontFace */}
                                 <motion.div
@@ -76,17 +76,19 @@ const Education = () => {
                                 {/* BackFace */}
                                 <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                                     <div className="flex min-h-full flex-col items-center justify-center">
-                                        <h2 className="text-2xl font-bold mb-4">Final grade: {edu.grade}</h2>
+                                        <h2 className="text-1xl lg:text-lg font-bold mb-4">Final grade: {edu.grade}</h2>
                                         {edu.awards.map((award, index) => (
-                                        <p key={index} className="text-lg text-pretty text-center mb-4 text-neutral-100">
+                                        <p key={index} className="text-1xl lg:text-lg text-purple-100 mt-2 mb-2">
                                             {award}
                                         </p>
                                             ))}
 
-                                        <a href={edu.href} className="inline-flex font-medium items-center text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
-                                                <span>Details:</span>
-                                                <FiExternalLink />
+                                        <a href={edu.hrefProgram} className="inline-flex mt-3 font-medium items-center text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                                                <span>Details to Program:</span>
+                                                <FiExternalLink className="ml-1" />
                                         </a>
+
+                                        {edu.hrefThesis !== undefined ? <a href={edu.hrefThesis} className="inline-flex mt-3 font-medium items-center text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Thesis:<FiExternalLink className='tml-1' /></a>: null}
                                     </div>
                                 </div>
                                 {/* END_BackFace */}

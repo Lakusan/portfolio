@@ -66,7 +66,8 @@ export const EDUCATION = [
     code: ["JavaScript", "Python", "C#"],
     skills: ["Project Management", "Service Engineering", "Full Stack Dev", "Computer Vision", "Extended Reality", "Digital Twins", "SLAM", "Cloud and Mobile Computing"],
     icon: SRHIcon,
-    href :"https://www.srh-university.de/en/master/applied-computer-science/i/"
+    hrefThesis: "https://github.com/Lakusan/invisnav/blob/main/MA_Thesis_Andreas_Lakus.pdf",
+    hrefProgram:"https://www.srh-university.de/de/master/applied-computer-science/i/"
   },
   {
     institude: "SRH University Heidelberg",
@@ -79,7 +80,8 @@ export const EDUCATION = [
     code: ["C++", "C#", "JavaScript", "Python"],
     skills: ["Game Development", "Computer Vision", "Extended Reality", "SLAM", "IoT", ],
     icon: SRHIcon,
-    href :"https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/d/"
+    hrefThesis: "",
+    hrefProgram :"https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/"
   },
   {
     institude: "IHR Northrhein Wertfalia",
@@ -92,7 +94,8 @@ export const EDUCATION = [
     code: ["MS Batch Script", "Shell", "Java", "C++"],
     skills: ["Project Management", "IT-Operations", "System Administration", "IT-Security"],
     icon: IHKIcon,
-    href :"https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
+    hrefThesis: undefined,
+    hrefProgram :"https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
   }
 ];
 
