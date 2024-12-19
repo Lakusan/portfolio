@@ -1,4 +1,3 @@
-import project4 from "../assets/projects/project-4.jpg";
 import heroIcon from "../assets/hero/hero.png";
 import daprotaIcon from "../assets/projects/daprota_appicon.png";
 import handtrackingImg from "../assets/projects/handtracking.png";
@@ -9,6 +8,7 @@ import SRHIcon from "../assets/partners/SRHIcon.png";
 import invisnavIcon from "../assets/projects/invisnav_icon.png";
 import rtmcIcon from "../assets/projects/rtmc.png";
 import aoIcon from "../assets/projects/alpha_onslaught.png";
+import mrIcon from "../assets/projects/MR.png";
 
 
 export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
@@ -119,7 +119,7 @@ export const PROJECTS = [
     detailsURL: undefined,
     image: invisnavIcon,
     description:
-      "Mobile Application for Scanning Environments as Digital Twin as Map with Navigation capabillities",
+      "Mobile Application for Scanning Environments as Digital Twin as Map with Navigation capabillities.",
     technologies: ["Unity Engine", "Niantic Lightship", "ARCore", "Firebase Realtime", "SLAM", "Extended Reality"],
     coding: ["C#", "JSON"],
   },
@@ -130,46 +130,33 @@ export const PROJECTS = [
     githubURL: "https://github.com/Lakusan/daprota",
     detailsURL: undefined,
     image: daprotaIcon,
-    description:
-      "The Data Protection Training app (DaProTa) is an Cross-Plattform-Application designed to educate users on the fundamental aspects of data privacy in Germany. The goal is to transform learning into an immersive journey, breaking down complex concepts into manageable parts, and leaving users not only informed but also enthusiastic about applying DSGVO principles in their daily lives.",
+    description:"The Data Protection Training app (DaProTa) is an Cross-Plattform-Application designed to educate users on the fundamental aspects of data privacy in Germany. The goal is to transform learning into an immersive journey, breaking down complex concepts into manageable parts, and leaving users not only informed but also enthusiastic about applying DSGVO principles in their daily lives.",
     technologies: [".NET MAUI", "Crossplattform", "Android", "Visual Studio"],
     coding: ["C#", "XML"]
   },
   {
     title: "Realtime Motion Capturing",
-    url: undefined,
+    url: "https://github.com/Lakusan/rt_motion_cap_unity",
     demoURL: undefined,
-    githubURL: undefined,
-    detailsURL: undefined,
+    githubURL: "https://github.com/Lakusan/rt_motion_cap_unity",
+    detailsURL: "https://github.com/Lakusan/rt_motion_cap_unity/blob/main/aai_presentation.pdf",
     image: rtmcIcon,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+      "This application was developed during the Module Applied Artificial Intelligence as part of my Master Degree in Applied Computer Science at SRH University Heidelberg, in July 2023. Python scripts are used to process live video stream from webcam. Mediapipe is used to process the images and extract a humans pose. NamedPipeServerStream is used on the server in unity to get data from python scripts. MediaPipes Pose data is then translated to unity coords. Representation of the joints is then shown with primitives in unity.",
     technologies: ["AI", "Computer Vision", "Unity Engine", "Mediapipe", "Real Time Computing", "Convolutional Neuronal Networks"],
     coding: ["C#", "Python"],
   },
   {
-    title: "Realtime Flight Tracker and Flight-Route-Planner",
-    url: undefined,
-    demoURL: undefined,
-    githubURL: undefined,
-    detailsURL: undefined,
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
     title: "Mixed Reality without HoloLens?",
-    url: undefined,
+    url: "https://github.com/Lakusan/MR_without_HoloLens/blob/main/11012049_Kolloquium_Bachelor_Thesis.pdf",
     demoURL: undefined,
-    githubURL: undefined,
-    detailsURL: undefined,
-    image: project4,
+    githubURL: "https://github.com/Lakusan/MR_without_HoloLens",
+    detailsURL: "https://github.com/Lakusan/MR_without_HoloLens/blob/main/11012049_Bachelor_Thesis.pdf",
+    image: mrIcon,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    coding: ["asd", "CSS", "React", "Node.js", "MongoDB"],
+      "Developed a research system based on the Robot Operating System (ROS) with an implementation of ORB SLAM 2, seamlessly integrated with the Unity Engine. Utilizing ORB SLAM 2 for environment understanding, this system enables the development of mixed reality applications using affordable webcams instead of the costly Microsoft HoloLens.",
+    technologies: ["ROS", "Unity Engine", "Linux", "TCP/IP", "Computer Vision", "SLAM", "CMake"],
+    coding: ["C#", "Python", "C++"],
   },
   {
     title: "Alpha Onslaught - Virtual Reality Game with real Haptics",
@@ -178,8 +165,7 @@ export const PROJECTS = [
     githubURL: undefined,
     detailsURL: "https://youtu.be/MOSGOFGztz4",
     image: aoIcon,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    description: "Immerse yourself in a unique Virtual Reality game developed with Unreal Engine, featuring real haptic input experiences. Step into the role of a Commander, coordinating your troops from within a bunker through a holographic battlefield. Activate abilities like missile strikes using a digital twin of a real input console, crafted with Arduino and Raspberry Pi. The game includes RFID inputs and functions as a Human Interface Device, providing a controller-like experience.",
     technologies: ["Arduino", "Raspberry Pi", "Embedded Development", "Unreal Engine", "RFID", "Internet of Things", "Digital Twins", "Extended Realities"],
     coding: ["C++", "Python"]
   },
@@ -190,7 +176,7 @@ export const PROJECTS = [
     githubURL: "https://github.com/Lakusan/KI-Projekt",
     detailsURL: "https://github.com/Lakusan/KI-Projekt/blob/main/11012049_KI_Pr%C3%A4sentation.pdf",
     image: handtrackingImg,
-    description:"This AI project was developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program as an examination performance. It features an illustrative representation of the training and classification process of a k-nearest neighbor algorithm. A hands on to Transfer Learning with teachable machines and the creation of own datasets including training for image classification. It also includes Memetings as example of a pre-trained model for hand gesture recognition to overlay images during virtual meetings in a virtual camera. Futhermore ther is a Hand Tracking feature with Universal hand gesture recognition for overlaying images.",
+    description:"Developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program, this project showcases the training and classification process of a k-nearest neighbor algorithm. It includes hands-on experience with transfer learning using teachable machines, creation of custom datasets, and training for image classification. Additionally, the project features Memetings, a pre-trained model for hand gesture recognition to overlay images during virtual meetings via a virtual camera. It also incorporates a hand tracking feature with universal hand gesture recognition for image overlay.",
     technologies: ["AI", "Image Analysis", "Web Development", "Tensorflow", "Convolutional Neuronal Networks", "Computer Vision"],
     coding: ["JavaScript", "HTML", "CSS"],
   }

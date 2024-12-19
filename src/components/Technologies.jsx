@@ -44,7 +44,9 @@ const Technologies = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 trasition={{ duration: 1.5 }}
-                className='my-20 text-center text-4xl'>Technologies</motion.h1>
+                className='my-20 text-center text-4xl'>
+                Technologies
+            </motion.h1>
             <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
@@ -57,7 +59,6 @@ const Technologies = () => {
                     whileHover={{ scale: 1.1 }}
                     className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
                     <a href='https://dotnet.microsoft.com/' target="_blank" rel="noopener noreferrer">
-
                         <SiJira className='text-7xl text-[#2684FF]'></SiJira>
                     </a>
                 </motion.div>
