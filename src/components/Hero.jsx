@@ -6,6 +6,8 @@ import Typewriter from "typewriter-effect";
 import { useInView } from "react-intersection-observer";
 import { AppContext } from "../app-context/AppContext";
 import { useContext } from 'react';
+import { ABOUT_TEXT_INTRO } from '../constants';
+
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -76,12 +78,19 @@ const Hero = () => {
                             />
                     </div>
                     <div>
-                        <motion.p
+                    <motion.p
                             variants={container(1)}
                             initial='hidden'
                             animate='visible'
                             className='my-s max-w-xl py-6 font-light tracking-tighter'>
                             {HERO_CONTENT}
+                        </motion.p>   <
+                            motion.p
+                            variants={container(1)}
+                            initial='hidden'
+                            animate='visible'
+                            className='my-s max-w-xl py-6 font-light tracking-tighter'>
+                            {ABOUT_TEXT_INTRO}
                         </motion.p>
                     </div>
                 </div>

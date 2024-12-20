@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Education from './components/Education';
+
 import ScrollToTop from "react-scroll-to-top";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
@@ -24,7 +25,6 @@ const App = () => {
           </div>
         </div>
         <div className='container mx-auto px-8 py-10 justify-center items-center'>
-
           <ScrollToTop
             component={<div className='flex flex-auto w-full h-full bg-slate-500 items-center justify-center rounded-sm'><MdKeyboardDoubleArrowUp className='w-12 h-12' /></div>}
             smooth
