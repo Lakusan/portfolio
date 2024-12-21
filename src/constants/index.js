@@ -13,10 +13,15 @@ import mrIcon from "../assets/projects/MR.png";
 
 export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
 
-export const ABOUT_TEXT_INTRO = `I am a dedicated and experienced IT professional with a strong background in system administration, project management, and software development. My journey in the tech industry spans over a decade, during which I have honed my skills in various domains, including cloud computing, DevOps, and Extended Realities. My career has spanned roles in both public and private sectors, where I have led various projects an Teams, optimized and automated processes and developed innovative long lasting solutions. `;
-export const ABOUT_TEXT_WE = `From 2020 to 2024, I worked as an Administrative Case Officer at the Federal Information Technology Centre. I established and led a Community of Practice Marketing, developed processes, designed communication strategies, and provided consulting services for federal ministries. My efforts led to an expansion of the customer base and the migration of many development projects to a cloud-based development platform. I worked with technologies like Jenkins, Git, Nexus Artefact Repository, Jira, and Confluence, and coded in Groovy, Python, Bash, and Perl. Previously, I was a System Administrator at the Special Operation Forces Command from 2014 to 2018, where I developed an operational experience database and contributed to high availability failover clustering. I used technologies like Windows Server 2012 R2 and Lotus Notes, and coded in PowerShell and C#. From 2010 to 2014, I served as a System Administrator at the NBC Defence Command, leading a service desk team and implementing a ticket management system. I also contributed to the HERKULES project and developed a training concept for a distributed command system. I worked with SAP, Lotus Notes, Command and Control Systems, Distributed Systems, and coded in PowerShell, HTML, and CSS. `;
-export const ABOUT_TEXT_EDU = `I hold an M.Sc. in Applied Computer Science with a specialization in Mobile Computing from SRH University Heidelberg, where I graduated with distinction and received awards for outstanding scientific performance. I also hold a B.Sc. in Virtual Realities with a specialization in Game Development from SRH University Heidelberg, where I graduated with  and received innovation awards. Additionally, I am a certified IT Specialist in Systems Integration from IHK Northrhein Westfalia.`
-export const ABOUT_TEXT_PERS = `I thrive in collaborative environments and enjoy solving complex problems. Outside of work, I\'m passionate about exploring new technologies and contributing to open-source projects. Outside of my professional life, I have a variety of interests that keep me active and engaged. I love mountain biking, which allows me to explore nature and stay fit. I also enjoy discovering new restaurants and experimenting with cooking for friends and family, always on the lookout for exciting flavors and recipes. Traveling is another passion of mine, as it gives me the opportunity to experience different cultures and meet new people. When Iam not on the move, I enjoy spending time with friends playing board games, which is always a fun and competitive way to bond. Additionally, I play the guitar, which is a great way for me to relax and express my creativity.`;
+export const ABOUT_TEXT_INTRO = [`I am a dedicated and experienced IT professional with a strong background in system administration, project management, and software development.`,`I thrive in collaborative environments and enjoy solving complex problems.`,`My journey in the tech industry spans over a decade, during which I have honed my skills in various domains, including cloud computing, DevOps, and Extended Realities.`,`My career has spanned roles in both public and private sectors, where I have led various projects and Teams, optimized and automated processes and developed innovative long lasting solutions.`];
+export const ABOUT_TEXT_WE = [`From 2020 to 2024, I worked as an Administrative Case Officer at the Federal Information Technology Centre. I established and led a Community of Practice Marketing, developed processes, designed communication strategies, and provided consulting services for federal ministries. My efforts led to an expansion of the customer base and the migration of many development projects to a cloud-based development platform. I worked with technologies like Jenkins, Git, Nexus Artefact Repository, Jira, and Confluence, and coded in Groovy, Python, Bash, and Perl.`,
+  `Previously, I was a System Administrator at the Special Operation Forces Command from 2014 to 2018, where I developed an operational experience database and contributed to high availability failover clustering. I used technologies like Windows Server 2012 R2 and Lotus Notes, and coded in PowerShell and C#.`,
+  `From 2010 to 2014, I served as a System Administrator at the NBC Defence Command, leading a service desk team and implementing a ticket management system. I also contributed to the HERKULES project and developed a training concept for a distributed command system. I worked with SAP, Lotus Notes, Command and Control Systems, Distributed Systems, and coded in PowerShell, HTML, and CSS.`];
+
+export const ABOUT_TEXT_EDU = [`I hold an M.Sc. in Applied Computer Science with a specialization in Mobile Computing from SRH University Heidelberg, where I graduated with distinction and received awards for outstanding scientific performance.`,
+  `I also hold a B.Sc. in Virtual Realities with a specialization in Game Development from SRH University Heidelberg, where I graduated with and received innovation awards.`, ` Additionally, I am a certified IT Specialist in Systems Integration from IHK Northrhein Westfalia.`];
+
+export const ABOUT_TEXT_PERS = [`Beyond the Desk, I have a variety of interests that keep me active and engaged.`,`I love mountain biking, which allows me to explore nature and stay fit. I also enjoy discovering new restaurants and experimenting with cooking for friends and family, always on the lookout for exciting flavors and recipes. Traveling is another passion of mine, as it gives me the opportunity to experience different cultures and meet new people.`,`When Iam not on the move, I enjoy spending time with friends playing board games, which is always a fun and competitive way to bond. Additionally, I play the guitar, which is a great way for me to relax and express my creativity.`];
 
 export const EXPERIENCES = [
   {
@@ -29,7 +34,7 @@ export const EXPERIENCES = [
     code: ["Groovy", "Python", "Bash", "Perl"],
     skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD"],
     logo: ITZIcon,
-    href:"https://www.itzbund.de/"
+    href: "https://www.itzbund.de/"
   },
   {
     year: "2014 - 2018",
@@ -41,7 +46,7 @@ export const EXPERIENCES = [
     code: ["Powershell", "C#"],
     skills: ["Project Management", "Customer Product Management", "Armament Projects", "Solution Development", "IT Product Evaluation", "IT-Operations"],
     logo: bundeswehrIcon,
-    href:"https://www.bundeswehr.de/"
+    href: "https://www.bundeswehr.de/"
   },
   {
     year: "2010 - 2014",
@@ -53,7 +58,7 @@ export const EXPERIENCES = [
     code: ["Powershell", "HTML", "CSS"],
     skills: ["Project Management", "Consulting", "Leadership", "Solution Development"],
     logo: bundeswehrIcon,
-    href:"https://www.bundeswehr.de/"
+    href: "https://www.bundeswehr.de/"
   },
 ];
 
@@ -70,7 +75,7 @@ export const EDUCATION = [
     skills: ["Project Management", "Service Engineering", "Full Stack Dev", "Computer Vision", "Extended Reality", "Digital Twins", "SLAM", "Cloud and Mobile Computing"],
     icon: SRHIcon,
     hrefThesis: "https://github.com/Lakusan/invisnav/blob/main/MA_Thesis_Andreas_Lakus.pdf",
-    hrefProgram:"https://www.srh-university.de/de/master/applied-computer-science/i/"
+    hrefProgram: "https://www.srh-university.de/de/master/applied-computer-science/i/"
   },
   {
     institude: "SRH University Heidelberg",
@@ -79,12 +84,12 @@ export const EDUCATION = [
     spec: "Game Development",
     grade: "1.8",
     awards: ["Innovation Awards of SRH Holding and Stadtwerke Heidelberg", "Best Graduate Award"],
-    technologies: ["Unity Engine", "Unreal Engine", "Virtual Box", ".NET", "Trello" ],
+    technologies: ["Unity Engine", "Unreal Engine", "Virtual Box", ".NET", "Trello"],
     code: ["C++", "C#", "JavaScript", "Python"],
-    skills: ["Game Development", "Computer Vision", "Extended Reality", "SLAM", "IoT", ],
+    skills: ["Game Development", "Computer Vision", "Extended Reality", "SLAM", "IoT",],
     icon: SRHIcon,
     hrefThesis: "",
-    hrefProgram :"https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/"
+    hrefProgram: "https://www.srh-university.de/de/bachelor/virtual-reality-game-development-game-programming/"
   },
   {
     institude: "IHR Northrhein Wertfalia",
@@ -98,7 +103,7 @@ export const EDUCATION = [
     skills: ["Project Management", "IT-Operations", "System Administration", "IT-Security"],
     icon: IHKIcon,
     hrefThesis: undefined,
-    hrefProgram :"https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
+    hrefProgram: "https://www.ihk.de/nordwestfalen/bildung/Ausbildung/Ausbildungsberufe-A-Z/Fachinformatiker-Systemintegration/"
   }
 ];
 
@@ -106,7 +111,7 @@ export const PROJECTS = [
   {
     title: "My Portfolio Website",
     url: "https://lakusan.github.io/portfolio/",
-    description:"Responsive React WebApp to introduce myself and my skillset to potential Employers and Clients.",
+    description: "Responsive React WebApp to introduce myself and my skillset to potential Employers and Clients.",
     demoURL: "https://lakusan.github.io/portfolio/",
     githubURL: "https://github.com/Lakusan/portfolio",
     detailsURL: undefined,
@@ -133,7 +138,7 @@ export const PROJECTS = [
     githubURL: "https://github.com/Lakusan/daprota",
     detailsURL: undefined,
     image: daprotaIcon,
-    description:"The Data Protection Training app (DaProTa) is an Cross-Plattform-Application designed to educate users on the fundamental aspects of data privacy in Germany. The goal is to transform learning into an immersive journey, breaking down complex concepts into manageable parts, and leaving users not only informed but also enthusiastic about applying DSGVO principles in their daily lives.",
+    description: "The Data Protection Training app (DaProTa) is an Cross-Plattform-Application designed to educate users on the fundamental aspects of data privacy in Germany. The goal is to transform learning into an immersive journey, breaking down complex concepts into manageable parts, and leaving users not only informed but also enthusiastic about applying DSGVO principles in their daily lives.",
     technologies: [".NET MAUI", "Crossplattform", "Android", "Visual Studio"],
     coding: ["C#", "XML"]
   },
@@ -179,7 +184,7 @@ export const PROJECTS = [
     githubURL: "https://github.com/Lakusan/KI-Projekt",
     detailsURL: "https://github.com/Lakusan/KI-Projekt/blob/main/11012049_KI_Pr%C3%A4sentation.pdf",
     image: handtrackingImg,
-    description:"Developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program, this project showcases the training and classification process of a k-nearest neighbor algorithm. It includes hands-on experience with transfer learning using teachable machines, creation of custom datasets, and training for image classification. Additionally, the project features Memetings, a pre-trained model for hand gesture recognition to overlay images during virtual meetings via a virtual camera. It also incorporates a hand tracking feature with universal hand gesture recognition for image overlay.",
+    description: "Developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program, this project showcases the training and classification process of a k-nearest neighbor algorithm. It includes hands-on experience with transfer learning using teachable machines, creation of custom datasets, and training for image classification. Additionally, the project features Memetings, a pre-trained model for hand gesture recognition to overlay images during virtual meetings via a virtual camera. It also incorporates a hand tracking feature with universal hand gesture recognition for image overlay.",
     technologies: ["AI", "Image Analysis", "Web Development", "Tensorflow", "Convolutional Neuronal Networks", "Computer Vision"],
     coding: ["JavaScript", "HTML", "CSS"],
   }

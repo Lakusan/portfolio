@@ -35,7 +35,11 @@ const AccordionItem = ({ index, title, content, isOpen, onClick }) => {
         ref={contentRef}
         className={`overflow-hidden transition-max-height duration-300 ease-in-out`}
         style={{ maxHeight: '0px' }}>
-        <div className="pb-5 text-sm text-neutral-200">{content}</div>
+          <div className="pb-5 text-sm text-neutral-200">
+        {content.map((text, index) => (
+          <p key={index}>{text}</p>
+        ))}
+        </div>
       </div>
     </div>
   );
@@ -50,15 +54,15 @@ const Accordion = () => {
 
   const items = [
     {
-      title: 'Experience',
+      title: 'Professional Experience',
       content: ABOUT_TEXT_WE,
     },
     {
-      title: 'Education',
+      title: 'Professional Qualifications',
       content: ABOUT_TEXT_EDU,
     },
     {
-      title: 'Hobbies',
+      title: 'Beyond the Desk',
       content: ABOUT_TEXT_PERS,
     },
   ];

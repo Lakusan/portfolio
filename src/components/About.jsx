@@ -24,7 +24,7 @@ const About = () => {
             <div ref={ref} className='About border-b border-neutral-900 pb-4 mt-24'>
                 <h1 className='my-20 text-center text-4xl'>
                     About
-                    <span className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-light text-transparent'>
+                    <span className='bg-gradient-to-r from-green-300 via-teal-500 to-blue-500 bg-clip-text text-4xl tracking-light text-transparent'>
                         Me
                     </span>
                 </h1>

@@ -51,7 +51,7 @@ const Hero = () => {
                                 <span> Lakus</span>
                         </motion.h1>
                         <motion.span
-                            className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent'
+                            className='bg-gradient-to-r from-green-300 via-teal-500 to-blue-500 bg-clip-text text-3xl tracking-light text-transparent'
                             variants={container(0.5)}
                             initial='hidden'
                             animate='visible'
@@ -67,7 +67,7 @@ const Hero = () => {
                         </motion.p>
                             <Typewriter
                                 options={{
-                                    wrapperClassName: 'bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent',
+                                    wrapperClassName: 'bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text text-3xl tracking-light text-transparent',
                                     strings: ["","Git/Dev(Sec)Ops", "Cloud Engineering", "Artificial Intelligence", "Computer Vision", "Photogrammetry", "IT-Infrastructure", "IT-Operations", "IT-Project Management", "Software Development", "Solution Development", "Consulting", "Leading Teams", "Service Management"],
                                     autoStart: true,
                                     loop: true,
@@ -94,14 +94,16 @@ const Hero = () => {
                         </motion.p>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/2 lg:p-8'>
+                <div className='w-full lg:w-1/2'>
                     <div className='flex justify-center'>
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1.2 }}
                             src={profilePic}
-                            alt='Andreas Lakus'>
+                            alt='Andreas Lakus'
+                            className='lg:pt-20'
+                            >
                         </motion.img>
                     </div>
                 </div>
