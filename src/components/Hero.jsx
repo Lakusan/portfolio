@@ -40,14 +40,14 @@ const Hero = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             initial={{ opacity: 0, y: -100 }}
                             transition={{ duration: 1 }}
-                            className='text-white'>
+                            className='text-neutral-400'>
                             Hi, I'm
                         </motion.h1>
                         <motion.h1
                             variants={container(0)}
                             initial='hidden'
                             animate='visible'
-                            className='lg:pb-16 pb-8 text-6xl front-thin tracking-tight lg:mt-16 mt-8 lg:text-8xl lg:text-start text-center'>
+                            className='lg:pb-16 pb-8 text-6xl front-thin tracking-tight lg:mt-16 mt-8 lg:text-8xl lg:text-start text-center text-neutral-300'>
                                 <span>Andreas</span>
                                 <span> Lakus</span>
                         </motion.h1>
@@ -62,7 +62,7 @@ const Hero = () => {
                             variants={container(1)}
                             initial='hidden'
                             animate='visible'
-                            className='mb-5'
+                            className='mb-5 text-neutral-400'
                         >
                             I do
                         </motion.p>
@@ -83,14 +83,14 @@ const Hero = () => {
                             variants={container(1)}
                             initial='hidden'
                             animate='visible'
-                            className='my-s max-w-xl py-6 font-light tracking-tighter'>
+                            className='my-s max-w-xl py-6 font-light tracking-tighter text-neutral-400'>
                             {HERO_CONTENT}
-                        </motion.p>   <
-                            motion.p
+                        </motion.p>   
+                        <motion.p
                             variants={container(1)}
                             initial='hidden'
                             animate='visible'
-                            className='my-s max-w-xl py-6 font-light tracking-tighter'>
+                            className='my-s max-w-xl py-6 font-light tracking-tighter text-neutral-400'>
                             {ABOUT_TEXT_INTRO}
                         </motion.p>
                     </div>

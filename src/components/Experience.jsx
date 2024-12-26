@@ -45,7 +45,7 @@ const Experience = () => {
                             <h6 className='mb-2 font-bold'>
                                 {experience.role}
                                 <div>
-                                    <span className='text-sm text-purple-100'>
+                                    <span className='text-sm text-blue-200'>
                                         {experience.company}
                                     </span>
                                 </div>
