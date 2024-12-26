@@ -38,16 +38,16 @@ const Education = () => {
                                     initial={{ opacity: 0 }}
                                     transition={{ duration: 1 }}>
                                     {(
-                                        <section className="grid grid-cols-2 items-center justify-center m-2  gap-2">
-                                            <div>
-                                                <img
-                                                    className="object-cover cursor-pointer h-1/3 w-1/3 rounded-xl"
-                                                    src={edu.icon}
-                                                    alt="icon institute"
-                                                />
-                                            </div>
-                                            <div className='grid grid-row-1 grid-cols-1 lg:text-2xl text-1xl text-purple-100'>{edu.institude}</div>
-                                        </section>
+                                       <section className="grid grid-cols-2 items-center justify-center m-2  gap-2">
+                                       <div>
+                                           <img
+                                               className="object-cover cursor-pointer h-1/3 w-1/3 rounded-xl"
+                                               src={edu.icon}
+                                               alt="icon institute"
+                                           />
+                                       </div>
+                                       <div className='grid grid-row-1 grid-cols-1 lg:text-2xl text-1xl text-blue-200'>{edu.institude}</div>
+                                   </section>
                                     )}
                                     <section className="grid grid-rows-3 items-center justify-start m-2">
                                         <p className="text-1xl font-semibold text-purple-100">{edu.degree}</p>

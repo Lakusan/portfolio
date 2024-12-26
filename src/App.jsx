@@ -26,7 +26,7 @@ const App = () => {
         </div>
         <div className='container mx-auto px-8 py-10 justify-center items-center'>
           <ScrollToTop
-            component={<div className='flex flex-auto w-full h-full bg-slate-500 items-center justify-center rounded-sm'><MdKeyboardDoubleArrowUp className='w-12 h-12' /></div>}
+            component={<div className='flex flex-auto w-full h-full bg-slate-800 items-center justify-center rounded-sm hover:bg-slate-700'><MdKeyboardDoubleArrowUp className='w-12 h-12' /></div>}
             smooth
           />
           <NavBar></NavBar>

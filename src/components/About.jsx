@@ -4,7 +4,7 @@ import { AppContext } from "../app-context/AppContext";
 
 import { motion } from 'framer-motion';
 
-import aboutImg from '../assets/about.jpg';
+import aboutImg from '../assets/about/me.png';
 
 import AccordionItem from './Accordion';
 
