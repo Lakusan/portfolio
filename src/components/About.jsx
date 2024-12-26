@@ -14,7 +14,8 @@ const About = () => {
     const { ref } = useInView({
         onChange: (inView) => {
             if (inView && state != 'About') {
-                setState('About')
+                setState('About');
+                console.log(state);
             }
         },
     });

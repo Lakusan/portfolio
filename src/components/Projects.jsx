@@ -13,7 +13,8 @@ const Projects = () => {
     const { ref } = useInView({
         onChange: (inView) => {
             if (inView && state != 'Projects') {
-                setState('Projects')
+                setState('Projects');
+                console.log(state);
             }
         },
     });
@@ -21,7 +22,7 @@ const Projects = () => {
         <div ref={ref} className='Projects border-b border-neutral-900 pb-4'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className='my-20 text-center text-4xl'>
                 Projects

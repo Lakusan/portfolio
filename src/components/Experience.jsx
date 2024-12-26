@@ -3,14 +3,15 @@ import { motion } from 'framer-motion'
 
 import { useInView } from "react-intersection-observer";
 import { AppContext } from "../app-context/AppContext";
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 const Experience = () => {
     const { state, setState } = useContext(AppContext);
     const { ref } = useInView({
         onChange: (inView) => {
             if (inView && state != 'Experience') {
-                setState('Experience')
+                setState('Experience');
+                console.log(state);
             }
         },
     });
@@ -18,7 +19,7 @@ const Experience = () => {
         <div ref={ref} className='Experience border-b border-neutral-900 pb-4'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className='my-20 text-center text-4xl'>Experience</motion.h1>
             <div>

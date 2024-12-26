@@ -16,7 +16,8 @@ const Contact = () => {
     const { ref } = useInView({
         onChange: (inView) => {
             if (inView && state != 'Contact') {
-                setState('Contact')
+                setState('Contact');
+                console.log(state);
             }
         },
     });
@@ -27,7 +28,7 @@ const Contact = () => {
             </div> */}
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className='my-10 text-center text-4xl'>
                 Get in Touch

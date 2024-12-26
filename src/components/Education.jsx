@@ -5,14 +5,16 @@ import { FiExternalLink } from "react-icons/fi";
 
 import { useInView } from "react-intersection-observer";
 import { AppContext } from "../app-context/AppContext";
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 const Education = () => {
     const { state, setState } = useContext(AppContext);
     const { ref } = useInView({
+        threshold: 0.3,
         onChange: (inView) => {
             if (inView && state != 'Education') {
-                setState('Education')
+                setState('Education');
+                console.log(state);
             }
         },
     });
@@ -20,7 +22,7 @@ const Education = () => {
         <div ref={ref} className='Education border-b border-neutral-900 pb-4'>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className='my-20 text-center text-4xl'>Education
             </motion.h1>
@@ -84,7 +86,7 @@ const Education = () => {
                                             ))}
 
                                         <a href={edu.hrefProgram} className="inline-flex mt-3 font-medium items-center text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
-                                                <span>Details to Program:</span>
+                                                <span>Program Details:</span>
                                                 <FiExternalLink className="ml-1" />
                                         </a>
 

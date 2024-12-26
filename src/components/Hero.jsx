@@ -26,7 +26,8 @@ const Hero = () => {
     const { ref } = useInView({
         onChange: (inView) => {
             if (inView && state != 'Home') {
-                setState('Home')
+                setState('Home');
+                console.log(state);
             }
         },
     });
