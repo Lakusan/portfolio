@@ -50,7 +50,8 @@ const Projects = () => {
                             initial={{ opacity: 0, x: 100 }}
                             transition={{ duration: 1 }}
                             className='w-full max-w-xl lg:w-3/4'>
-                            <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                            <h6 className='mb-2 font-semibold text-blue-200'>{project.title}</h6>
+                            <h1 className='text-neutral-400 mb-1'>{project.duration}</h1>
                             <p className='mb-4 text-neutral-400'>{project.description}</p>
                             <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-3 mb-3'>
                                 {project.demoURL !== undefined ? <div className='inline-block'><a href={project.demoURL} className="text-blue-500 hover:underline inline-flex items-center" target="_blank" rel="noopener noreferrer">Demo:<FiExternalLink className='ml-1'></FiExternalLink></a></div> : null}

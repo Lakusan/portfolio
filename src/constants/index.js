@@ -11,17 +11,32 @@ import aoIcon from "../assets/projects/alpha_onslaught.png";
 import mrIcon from "../assets/projects/MR.png";
 
 
-export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
+// export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
 
-export const ABOUT_TEXT_INTRO = [`I am a dedicated and experienced IT professional with a strong background in system administration, project management, and software development.`,` I thrive in collaborative environments and enjoy solving complex problems.`,` My journey in the tech industry spans over a decade, during which I have honed my skills in various domains, including cloud computing, DevOps, and Extended Realities.`,` My career has spanned roles in both public and private sectors, where I have led various projects and Teams, optimized and automated processes and developed innovative long lasting solutions.`];
-export const ABOUT_TEXT_WE = [`From 2020 to 2024, I worked as an Administrative Case Officer at the Federal Information Technology Centre. I established and led a Community of Practice Marketing, developed processes, designed communication strategies, and provided consulting services for federal ministries. My efforts led to an expansion of the customer base and the migration of many development projects to a cloud-based development platform. I worked with technologies like Jenkins, Git, Nexus Artefact Repository, Jira, and Confluence, and coded in Groovy, Python, Bash, and Perl.`,
-  `Previously, I was a System Administrator at the Special Operation Forces Command from 2014 to 2018, where I developed an operational experience database and contributed to high availability failover clustering. I used technologies like Windows Server 2012 R2 and Lotus Notes, and coded in PowerShell and C#.`,
-  `From 2010 to 2014, I served as a System Administrator at the NBC Defence Command, leading a service desk team and implementing a ticket management system. I also contributed to the HERKULES project and developed a training concept for a distributed command system. I worked with SAP, Lotus Notes, Command and Control Systems, Distributed Systems, and coded in PowerShell, HTML, and CSS.`];
+export const HERO_CONTENT = [
+  `I am a dedicated and experienced IT professional with a strong background in system administration, IT operations, project management, consulting, and software development.`,
+  ` I thrive in collaborative environments and enjoy solving complex problems with sustainable and robust solutions.`,
+  ` My journey in the tech industry spans over a decade, during which I have honed my skills in various domains, including cloud computing, DevOps, AI, and extended realities.`,
+  ` My career has spanned roles in both public and private sectors, where I have led various projects and teams, optimized and automated processes, and developed innovative, long-lasting solutions.`
+];
 
-export const ABOUT_TEXT_EDU = [`I hold an M.Sc. in Applied Computer Science with a specialization in Mobile Computing from SRH University Heidelberg, where I graduated with distinction and received awards for outstanding scientific performance.`,
-  `I also hold a B.Sc. in Virtual Realities with a specialization in Game Development from SRH University Heidelberg, where I graduated with and received innovation awards.`, ` Additionally, I am a certified IT Specialist in Systems Integration from IHK Northrhein Westfalia.`];
+export const ABOUT_TEXT_WE = [
+  `From 2020 to 2024, I worked as an Administrative Case Officer at the Federal Information Technology Centre. I established and led a Community of Practice for Marketing and Consulting, where I developed processes, designed communication strategies, and provided consulting services for federal ministries. I played a key-role in an expansion of the customer base and the migration of many development projects to a cloud-based development platform. I worked with technologies like Jenkins, Git, Nexus Artefact Repository, Jira, and Confluence, and coded in Groovy, Python, Bash, and Perl.`,
+  `Previously, I was a System Administrator at the Special Operation Forces Command from 2014 to 2018, where I developed an operational experience database and contributed to high-availability failover clustering. I used technologies like Windows Server 2012 R2 and Lotus Notes, and coded in PowerShell and C#.`,
+  `From 2010 to 2014, I served as a System Administrator at the NBC Defence Command, leading a service desk team and implementing a ticket management system. I also contributed to the HERKULES project and developed a training concept for a distributed command system. I worked with SAP, Lotus Notes, Command and Control Systems, Distributed Systems, and coded in PowerShell, HTML, and CSS.`
+];
 
-export const ABOUT_TEXT_PERS = [`Beyond the Desk, I have a variety of interests that keep me active and engaged.`,`I love mountain biking, which allows me to explore nature and stay fit. I also enjoy discovering new restaurants and experimenting with cooking for friends and family, always on the lookout for exciting flavors and recipes. Traveling is another passion of mine, as it gives me the opportunity to experience different cultures and meet new people.`,`When Iam not on the move, I enjoy spending time with friends playing board games, which is always a fun and competitive way to bond. Additionally, I play the guitar, which is a great way for me to relax and express my creativity.`];
+export const ABOUT_TEXT_EDU = [
+  `I hold an M.Sc. in Applied Computer Science with a specialization in Mobile Computing from SRH University Heidelberg, where I graduated with distinction as top of the class and received the Masters Award for outstanding scientific performance.`,
+  `I also hold a B.Sc. in Virtual Realities with a specialization in Game Development from SRH University Heidelberg, where I graduated with honors as top of the class and received innovation awards for my scientific work.`,
+  ` Additionally, I am a certified IT Specialist in Systems Integration from IHK Northrhein Westfalia.`
+];
+
+export const ABOUT_TEXT_PERS = [
+  `Beyond the Desk, I have a variety of interests that keep me active and engaged.`,
+  `I love mountain biking, which allows me to explore nature and stay fit. I also enjoy discovering new restaurants and experimenting with cooking for friends and family, always on the lookout for exciting flavors and recipes. Traveling is another passion of mine, as it gives me the opportunity to experience different cultures and meet new people.`,
+  `When Iam not on the move, I enjoy spending time with friends playing board games, which is always a fun and competitive way to bond. Additionally, I play the guitar, which is a great way for me to relax and express my creativity.`
+];
 
 export const EXPERIENCES = [
   {
@@ -29,7 +44,7 @@ export const EXPERIENCES = [
     role: "Administrative Case Officer",
     department: "Engineering processes, individual specialized procedures, development systems",
     company: "Federal Information Technology Centre ",
-    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base by 80% within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Product Management for Development Tools Solution Development for Migrations and Automation.", "Replacement of an on-premise Software Configuration Management solution and migration of 400 individual development projects to a cloud-based development platform within three years."],
+    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base by 40% within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Product Management for Development Tools Solution Development for Migrations and Automation.", "Replacement of an on-premise Software Configuration Management solution and migration of 400 individual development projects to a cloud-based development platform within three years."],
     technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
     code: ["Groovy", "Python", "Bash", "Perl"],
     skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD"],
@@ -65,7 +80,7 @@ export const EXPERIENCES = [
 export const EDUCATION = [
   {
     institude: "SRH University Heidelberg",
-    period: "Oct. 22 - Sep. 24",
+    period: "10/2022 - 09/2024",
     degree: "M.Sc. Applied Computer Science",
     spec: "Mobile Computing",
     grade: "1.2",
@@ -79,7 +94,7 @@ export const EDUCATION = [
   },
   {
     institude: "SRH University Heidelberg",
-    period: "Oct. 18 - Sep. 21",
+    period: "10/2018 - 09/2021",
     degree: "B.Sc. Virtual Realities",
     spec: "Game Development",
     grade: "1.8",
@@ -93,7 +108,7 @@ export const EDUCATION = [
   },
   {
     institude: "IHR Northrhein Wertfalia",
-    period: "Oct. 10 - Jul. 12",
+    period: "10/2010 - 07/2012",
     degree: "Certified IT Specialist",
     spec: "Systems Integration",
     grade: "2.4",
@@ -110,6 +125,7 @@ export const EDUCATION = [
 export const PROJECTS = [
   {
     title: "My Portfolio Website",
+    duration: "10/2024 - 12/2024",
     url: "https://lakusan.github.io/portfolio/",
     description: "Responsive React WebApp to introduce myself and my skillset to potential Employers and Clients.",
     demoURL: "https://lakusan.github.io/portfolio/",
@@ -121,18 +137,20 @@ export const PROJECTS = [
   },
   {
     title: "INVISNAV - Indoor Visual Positioning System for Mobile Devices",
+    duration: "03/2024 - 09/2024",
     url: "https://github.com/Lakusan/invisnav",
     demoURL: undefined,
     githubURL: "https://github.com/Lakusan/invisnav",
     detailsURL: undefined,
     image: invisnavIcon,
     description:
-      "Mobile Application for Scanning Environments as Digital Twin as Map with Navigation capabillities.",
-    technologies: ["Unity Engine", "Niantic Lightship", "ARCore", "Firebase Realtime", "SLAM", "Extended Reality"],
-    coding: ["C#", "JSON"],
+      "This project showcases the development of an advanced indoor navigation system using Simultaneous Localization and Mapping (SLAM) techniques. The prototype leverages Unity Engine and ARCore to create a visual positioning system that can navigate unknown environments. Key features include real-time environment mapping, which utilizes camera-generated images and computer vision to create digital maps during runtime. It also demonstrates ARCore's ability to scan and reconstruct spaces as digital twins for navigation. The system proves effective reconstruction with minimal data and ensures collaborative use by publishing map data to a cloud database for shared access.",
+    technologies: ["Unity Engine", "Niantic Lightship", "ARCore", "Firebase Realtime", "SLAM", "Extended Reality", "AI", "Computer Vision", "Digital Twins", "Mobile App Development", "Real-time Databases", "Cloud Computing"],
+    coding: ["C#", "JSON", "C++"],
   },
   {
-    title: "Daprota - Data Protection Training App (Win/Android/IOS) ",
+    title: "Daprota - Data Protection Training App (Win/Android/IOS)",
+    duration: "11/2023 - 12/2023",
     url: "https://github.com/Lakusan/daprota",
     demoURL: undefined,
     githubURL: "https://github.com/Lakusan/daprota",
@@ -144,6 +162,7 @@ export const PROJECTS = [
   },
   {
     title: "Realtime Motion Capturing",
+    duration: "06/2023 - 07/2023",
     url: "https://github.com/Lakusan/rt_motion_cap_unity",
     demoURL: undefined,
     githubURL: "https://github.com/Lakusan/rt_motion_cap_unity",
@@ -156,6 +175,7 @@ export const PROJECTS = [
   },
   {
     title: "Mixed Reality without HoloLens?",
+    duration: "06/2021 - 09/2021",
     url: "https://github.com/Lakusan/MR_without_HoloLens/blob/main/11012049_Kolloquium_Bachelor_Thesis.pdf",
     demoURL: undefined,
     githubURL: "https://github.com/Lakusan/MR_without_HoloLens",
@@ -164,21 +184,11 @@ export const PROJECTS = [
     description:
       "Developed a research system based on the Robot Operating System (ROS) with an implementation of ORB SLAM 2, seamlessly integrated with the Unity Engine. Utilizing ORB SLAM 2 for environment understanding, this system enables the development of mixed reality applications using affordable webcams instead of the costly Microsoft HoloLens.",
     technologies: ["ROS", "Unity Engine", "Linux", "TCP/IP", "Computer Vision", "SLAM", "CMake"],
-    coding: ["C#", "Python", "C++"],
-  },
-  {
-    title: "Alpha Onslaught - Virtual Reality Game with real Haptics",
-    url: "https://youtu.be/MOSGOFGztz4",
-    demoURL: undefined,
-    githubURL: undefined,
-    detailsURL: "https://youtu.be/MOSGOFGztz4",
-    image: aoIcon,
-    description: "Immerse yourself in a unique Virtual Reality game developed with Unreal Engine, featuring real haptic input experiences. Step into the role of a Commander, coordinating your troops from within a bunker through a holographic battlefield. Activate abilities like missile strikes using a digital twin of a real input console, crafted with Arduino and Raspberry Pi. The game includes RFID inputs and functions as a Human Interface Device, providing a controller-like experience.",
-    technologies: ["Arduino", "Raspberry Pi", "Embedded Development", "Unreal Engine", "RFID", "Internet of Things", "Digital Twins", "Extended Realities"],
-    coding: ["C++", "Python"]
+    coding: ["C#", "Python", "C++", "Shell"],
   },
   {
     title: "Teachable Machines - Transfer Lerning with Images",
+    duration: "10/2020 - 11/2020",
     url: "https://lakusan.github.io/KI-Projekt/",
     demoURL: "https://lakusan.github.io/KI-Projekt/",
     githubURL: "https://github.com/Lakusan/KI-Projekt",
@@ -187,6 +197,18 @@ export const PROJECTS = [
     description: "Developed as part of the AI for Game Developers module at SRH University Heidelberg in the B.Sc. Virtual Realities - Game Development program, this project showcases the training and classification process of a k-nearest neighbor algorithm. It includes hands-on experience with transfer learning using teachable machines, creation of custom datasets, and training for image classification. Additionally, the project features Memetings, a pre-trained model for hand gesture recognition to overlay images during virtual meetings via a virtual camera. It also incorporates a hand tracking feature with universal hand gesture recognition for image overlay.",
     technologies: ["AI", "Image Analysis", "Web Development", "Tensorflow", "Convolutional Neuronal Networks", "Computer Vision"],
     coding: ["JavaScript", "HTML", "CSS"],
+  },
+  {
+    title: "Alpha Onslaught - Virtual Reality Game with real Haptics",
+    duration: "12/2019 - 03/2020",
+    url: "https://youtu.be/MOSGOFGztz4",
+    demoURL: undefined,
+    githubURL: undefined,
+    detailsURL: "https://youtu.be/MOSGOFGztz4",
+    image: aoIcon,
+    description: "Immerse yourself in a unique Virtual Reality game developed with Unreal Engine, featuring real haptic input experiences. Step into the role of a Commander, coordinating your troops from within a bunker through a holographic battlefield. Activate abilities like missile strikes using a digital twin of a real input console, crafted with Arduino and Raspberry Pi. The game includes RFID inputs and functions as a Human Interface Device, providing a controller-like experience.",
+    technologies: ["Arduino", "Raspberry Pi", "Embedded Development", "Unreal Engine", "RFID", "Internet of Things", "Digital Twins", "Extended Realities"],
+    coding: ["C++", "Python"]
   }
 ];
 

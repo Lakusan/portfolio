@@ -54,11 +54,11 @@ const Accordion = () => {
 
   const items = [
     {
-      title: 'Professional Experience',
+      title: 'Experience',
       content: ABOUT_TEXT_WE,
     },
     {
-      title: 'Professional Qualifications',
+      title: 'Qualifications',
       content: ABOUT_TEXT_EDU,
     },
     {

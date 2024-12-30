@@ -45,7 +45,7 @@ const About = () => {
                         transition={{ duration: 0.5 }}
                         className='w-full lg:w-1/2'>
 
-                            <div className='flex justify-center lg:justify-start'>
+                            <div className='flex justify-center lg:justify-start pt-2'>
                             <AccordionItem></AccordionItem>
                         </div>
                         {/* 
