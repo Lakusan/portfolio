@@ -1,8 +1,41 @@
-# React + Vite
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Lakusan/portfolio">
+    <img src="src\assets\hero\android-chrome-512x512.png" alt="Logo" width="80" height="80">
+  </a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">
+<span style="color: #84cc16;">MyPortfolio</span>
 
-Currently, two official plugins are available:
+  <p align="center">
+    </br>
+    <a href="https://lakusan.github.io/portfolio/"><strong>Live Version »</strong></a>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<div>
+    </br>
+    <p>
+   I developed this responsive React Website to introduce myself and my skillset to potential Employers and Clients.
+    </p>
+    
+</div>
+
+
+<!-- LICENSE --> 
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+</br>
+
+<!-- CONTACT -->
+## Contact
+
+* Project Link: [https://github.com/Lakusan/portfolio](https://github.com/Lakusan/invisnav)
+* [![LinkedIn][linkedin-shield]][linkedin-url]
+  
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/lakusan
