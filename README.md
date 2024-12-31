@@ -34,7 +34,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-* Project Link: [https://github.com/Lakusan/protfolio](https://github.com/Lakusan/invisnav)
+* Project Link: [https://github.com/Lakusan/portfolio](https://github.com/Lakusan/invisnav)
 * [![LinkedIn][linkedin-shield]][linkedin-url]
   
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
