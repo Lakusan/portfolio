@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Lakusan/portfolio">
-    <img src="assets\hero\android-chrome-512x512.png" alt="Logo" width="80" height="80">
+    <img src="src\assets\hero\android-chrome-512x512.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">
@@ -19,7 +19,7 @@
 <div>
     </br>
     <p>
-   I developed this React Website to introduce myself and my skillset to potential Employers and Clients.
+   I developed this responsive React Website to introduce myself and my skillset to potential Employers and Clients.
     </p>
     
 </div>
