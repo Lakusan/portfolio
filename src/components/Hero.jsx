@@ -69,7 +69,7 @@ const Hero = () => {
                             <Typewriter
                                 options={{
                                     wrapperClassName: 'bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text text-3xl tracking-light text-transparent',
-                                    strings: ["","Git/Dev(Sec)Ops", "Cloud Engineering", "Artificial Intelligence", "Computer Vision", "Photogrammetry", "IT-Infrastructure", "IT-Operations", "IT-Project Management", "Software Development", "Solution Development", "Consulting", "Leading Teams", "Service Management"],
+                                    strings: ["Git/Dev(Sec)Ops", "Cloud Engineering", "Artificial Intelligence", "Computer Vision", "IT-Infrastructure", "IT-Operations", "IT-Project Management", "Software Development", "Solution Development", "Consulting", "Leading Teams", "Service Management", "Product Management", "SaaS", "PaaS", "IaaS", "CI/CD", "Automation"],
                                     autoStart: true,
                                     loop: true,
                                     loopCount: Infinity,

@@ -59,7 +59,7 @@ const Technologies = () => {
                     animate='animate'
                     whileHover={{ scale: 1.1 }}
                     className='rounded-2xl border-4 border-neutral-800 p-2 shadow-[0px_0px_10px_5px_rgba(165,255,28,0.5)]'>
-                    <a href='https://dotnet.microsoft.com/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.atlassian.com/software/jira' target="_blank" rel="noopener noreferrer">
                         <SiJira className='text-7xl text-[#2684FF]'></SiJira>
                     </a>
                 </motion.div>

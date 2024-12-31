@@ -56,7 +56,7 @@ const Projects = () => {
                             <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-3 mb-3'>
                                 {project.demoURL !== undefined ? <div className='inline-block'><a href={project.demoURL} className="text-blue-500 hover:underline inline-flex items-center" target="_blank" rel="noopener noreferrer">Demo:<FiExternalLink className='ml-1'></FiExternalLink></a></div> : null}
                                 {project.detailsURL !== undefined ? <div className='inline-block'><a href={project.detailsURL} className="text-blue-500 hover:underline inline-flex items-center" target="_blank" rel="noopener noreferrer">Details:<FiExternalLink className='ml-1'/></a></div> : null}
-                                {project.githubURL !== undefined ? <div className='inline-block'><a href={project.githubURL} className="text-blue-500 hover:underline inline-flex items-center" target="_blank" rel="noopener noreferrer">SourceCode:<FaGithub className='text-neutral-50 ml-1' /></a></div> : null}
+                                {project.githubURL !== undefined ? <div className='inline-block'><a href={project.githubURL} className="text-blue-500 hover:underline inline-flex items-center" target="_blank" rel="noopener noreferrer">Github:<FaGithub className='text-neutral-50 ml-1' /></a></div> : null}
                             </div>
                             <div className='mb-2 flex flex-wrap'>
                                 {project.technologies.map((tech, index) => (
