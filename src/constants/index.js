@@ -44,7 +44,7 @@ export const EXPERIENCES = [
     role: "Administrative Case Officer",
     department: "Engineering processes, individual specialized procedures, development systems",
     company: "Federal Information Technology Centre ",
-    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base by 40% within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Product Management for Development Tools Solution Development for Migrations and Automation.", "Replacement of an on-premise Software Configuration Management solution and migration of 400 individual development projects to a cloud-based development platform within three years."],
+    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Managed product development tools, focusing on solutions for migration and automation.", "Modeled processes and actively contributed to the replacement of an on-premise Software Configuration Management system and Successfully led the migration of numerous transformation projects to a cloud-based development platform within a three-year timeframe"],
     technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
     code: ["Groovy", "Python", "Bash", "Perl"],
     skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD", "IaaS"],
@@ -141,7 +141,7 @@ export const PROJECTS = [
     url: "https://github.com/Lakusan/invisnav",
     demoURL: undefined,
     githubURL: "https://github.com/Lakusan/invisnav",
-    detailsURL: undefined,
+    detailsURL: "https://lakusan.github.io/invisnav_speech/",
     image: invisnavIcon,
     description:
       "This project showcases the development of an advanced indoor navigation system using Simultaneous Localization and Mapping (SLAM) techniques. The prototype leverages Unity Engine and ARCore to create a visual positioning system that can navigate unknown environments. Key features include real-time environment mapping, which utilizes camera-generated images and computer vision to create digital maps during runtime. It also demonstrates ARCore's ability to scan and reconstruct spaces as digital twins for navigation. The system proves effective reconstruction with minimal data and ensures collaborative use by publishing map data to a cloud database for shared access.",
@@ -213,7 +213,5 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Friedrichstraße 15, 76669 Bad Schönborn",
-  phoneNo: "+49 173 578 749 5",
   email: "Andreas.Lakus@googlemail.com",
 };
