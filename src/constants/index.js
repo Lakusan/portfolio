@@ -11,8 +11,6 @@ import aoIcon from "../assets/projects/alpha_onslaught.png";
 import mrIcon from "../assets/projects/MR.png";
 
 
-// export const HERO_CONTENT = `Innovative Solution Developer with a passion for digitalization and modern technologies. Extensive experience in agile software product development within multi-cloud environments. Skilled in building and leading teams, as well as in process development and optimization. Specialized in requirements analysis, solution development, automation, and data migrations. Proficient in software configuration management, onboarding process coordination, DevOps and Continuous Integration & Deployment (CI/CD).`;
-
 export const HERO_CONTENT = [
   `I am a dedicated and experienced IT professional with a strong background in system administration, IT operations, project management, consulting, and software development.`,
   ` I thrive in collaborative environments and enjoy solving complex problems with sustainable and robust solutions.`,
@@ -44,7 +42,7 @@ export const EXPERIENCES = [
     role: "Administrative Case Officer",
     department: "Engineering processes, individual specialized procedures, development systems",
     company: "Federal Information Technology Centre ",
-    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Managed product development tools, focusing on solutions for migration and automation.", "Modeled processes and actively contributed to the replacement of an on-premise Software Configuration Management system and Successfully led the migration of numerous transformation projects to a cloud-based development platform within a three-year timeframe"],
+    description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Managed product development tools, focusing on solutions for migration and automation.", "Modeled processes and actively contributed to the replacement of an on-premise Software Configuration Management system and successfully led the transformation of numerous development projects to a cloud-based development platform."],
     technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
     code: ["Groovy", "Python", "Bash", "Perl"],
     skills: ["Product Management", "Consulting", "Service Management", "Solution Development", "Automation", "Cloud Computing", "DevOps", "CI/CD", "IaaS"],
