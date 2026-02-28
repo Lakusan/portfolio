@@ -14,7 +14,6 @@ const Education = () => {
         onChange: (inView) => {
             if (inView && state != 'Education') {
                 setState('Education');
-                console.log(state);
             }
         },
     });

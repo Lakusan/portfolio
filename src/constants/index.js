@@ -5,6 +5,7 @@ import bundeswehrIcon from "../assets/partners/Bundeswehr.jpg";
 import ITZIcon from "../assets/partners/ITZBund.jpg";
 import IHKIcon from "../assets/partners/IHKIcon.jpeg";
 import SRHIcon from "../assets/partners/SRHIcon.png";
+import BGHIcon from "../assets/partners/BGH.jpg";
 import invisnavIcon from "../assets/projects/invisnav_icon.png";
 import rtmcIcon from "../assets/projects/rtmc.png";
 import aoIcon from "../assets/projects/alpha_onslaught.png";
@@ -19,6 +20,7 @@ export const HERO_CONTENT = [
 ];
 
 export const ABOUT_TEXT_WE = [
+  `Since 2025 I serve as Network Security Administrator and IT Architect at the Federal Court of Justice in Karlsruhe, where I manage the operation, monitoring, and optimization of complex network infrastructures and access control systems. I coordinate interdisciplinary project teams and external service providers, and design secure concepts for encrypted site connections and dedicated data networks such as real-time video surveillance. As Security Point of Contact for the Federal Office for Information Security, I ensure compliance with BSI IT baseline protection standards, analyze and resolve security incidents, and contribute to the IT security concept. In the Federal IT Consolidation Project, I evaluate IT solutions for their consolidation capability and migration into Infrastructure-as-a-Service environments of the Federal Cloud, create cross-disciplinary technical architectures, and provide strategic consulting to senior leadership and decision-makers.`,
   `From 2020 to 2024, I worked as an Administrative Case Officer at the Federal Information Technology Centre. I established and led a Community of Practice for Marketing and Consulting, where I developed processes, designed communication strategies, and provided consulting services for federal ministries. I played a key-role in the expansion of the customer base and the migration of many development projects to a cloud-based development platform. I worked with technologies like Jenkins, Git, Nexus Artefact Repository, Jira, and Confluence, and coded in Groovy, Python, Bash, and Perl.`,
   `Previously, I was a System Administrator at the Special Operation Forces Command from 2014 to 2018, where I developed an operational experience database and contributed to high-availability failover clustering. I used technologies like Windows Server 2012 R2 and Lotus Notes, and coded in PowerShell and C#.`,
   `From 2010 to 2014, I served as a System Administrator at the NBC Defence Command, leading a service desk team and implementing a ticket management system. I also contributed to the HERKULES project and developed a training concept for a distributed command system. I worked with SAP, Lotus Notes, Command and Control Systems, Distributed Systems, and coded in PowerShell, HTML, and CSS.`
@@ -37,11 +39,23 @@ export const ABOUT_TEXT_PERS = [
 ];
 
 export const EXPERIENCES = [
+    {
+    year: "2025 - today",
+    role: "Network Security Administrator | IT Architect",
+    department: "Information Technology",
+    company: "Federal Court of Justice",
+    description: ["Responsible for the operation, monitoring, and maintenance of the networks of the Federal Court of Justice, including troubleshooting, component replacement, and system upkeep (switches, routers, firewalls, network management systems, and access control mechanisms).", "Management and implementation of network projects with planning, control, and coordination of project teams and external service providers.", "Design and realization of solutions for the expansion and optimization of encrypted site connections and dedicated data networks. Selection of suitable hardware and software components ensures problem resolution and network optimization, while providing technical support for procurement procedures including bid evaluation.", "Serving as Security Point of Contact for the Federal Office for Information Security with responsibility for the advancement of strategic and operational IT security in accordance with BSI IT baseline protection standards. Security-relevant incidents are analyzed and processed, preventive measures are derived, and inquiries from the Federal Government and ministries are handled, with contributions made to the IT security concept.", "Working as IT Architect in the Federal IT Consolidation Project with a focus on evaluating IT solutions regarding their consolidation capability and migration into Infrastructure-as-a-Service environments of the Federal Cloud and the central federal operations platform. Development of cross-disciplinary technical solution concepts and target architectures, leadership of interdisciplinary project teams, strategic consulting for senior management and decision-makers, and coordination of communication with authorities, departments, and external partners."],
+    technologies: ["GitLab", "git", "Macmon (NAC) ", "GenuGate/-Screen Firewall", "Cisco"],
+    code: ["Python", "Bash", "Powershell"],
+    skills: ["Project Management", "Strategic (Security) Planning", "Service Management", "Solution Development", "Incident Response", "Cloud Computing", "IaaS", "Digital Transformation", "BCM", "Network Access Control", "Vendor-/ Stakeholdermanamgement", "System/Software Architecture Design"],
+    logo: BGHIcon,
+    href: "https://www.bundesgerichtshof.de/DE/Home/home_node.html"
+  },
   {
     year: "2020 - 2024",
     role: "Administrative Case Officer",
     department: "Engineering processes, individual specialized procedures, development systems",
-    company: "Federal Information Technology Centre ",
+    company: "Federal Information Technology Centre",
     description: ["Establishment and Technical Leadership of a Community of Practice Marketing. Responsible for Process Development and Optimization, Communication Design, Solution Development and Consulting Services for Federal Ministries.", "Contributed to the successful expansion of the customer base within three years through targeted marketing measures, strategic customer acquisition, particularly effective service management, and optimization.", "Managed product development tools, focusing on solutions for migration and automation.", "Modeled processes and actively contributed to the replacement of an on-premise Software Configuration Management system and successfully led the transformation of numerous development projects to a cloud-based development platform."],
     technologies: ["Jenkis", "git", "Nexus Artefact Repository", "Jira", "Confluence"],
     code: ["Groovy", "Python", "Bash", "Perl"],

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { InView, useInView } from "react-intersection-observer";
 import { AppContext } from "../app-context/AppContext";
 
@@ -15,7 +15,6 @@ const About = () => {
         onChange: (inView) => {
             if (inView && state != 'About') {
                 setState('About');
-                console.log(state);
             }
         },
     });

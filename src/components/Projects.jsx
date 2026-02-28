@@ -14,7 +14,6 @@ const Projects = () => {
         onChange: (inView) => {
             if (inView && state != 'Projects') {
                 setState('Projects');
-                console.log(state);
             }
         },
     });

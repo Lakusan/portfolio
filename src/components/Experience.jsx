@@ -11,7 +11,6 @@ const Experience = () => {
         onChange: (inView) => {
             if (inView && state != 'Experience') {
                 setState('Experience');
-                console.log(state);
             }
         },
     });

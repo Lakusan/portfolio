@@ -27,7 +27,6 @@ const Hero = () => {
         onChange: (inView) => {
             if (inView && state != 'Home') {
                 setState('Home');
-                console.log(state);
             }
         },
     });

@@ -7,7 +7,7 @@ import { FaDiscord } from "react-icons/fa";
 
 import { useInView } from "react-intersection-observer";
 import { AppContext } from "../app-context/AppContext";
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 
 
@@ -17,7 +17,6 @@ const Contact = () => {
         onChange: (inView) => {
             if (inView && state != 'Contact') {
                 setState('Contact');
-                console.log(state);
             }
         },
     });
